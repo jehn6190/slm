@@ -1,0 +1,141 @@
+@font-face {
+	font-family: THICCCBOI;
+	src: url("/public/fonts/Webfont/THICCCBOI-Medium.woff2") format('woff2');
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+}
+
+.select{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: #292929;
+    text-align: left;
+    padding: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.select::after{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.select:hover{
+    background: #222222;
+}
+
+.select.active{
+    background: #222222;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.options{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.options.active{
+    display: block;
+}
+
+.options .item{
+    color: #fff;
+    text-transform: capitalize;
+    width: 100%;
+    height: 30px;
+    padding: 0 15px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.options .item.active{
+    background: #292929;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.gradient-color1{
+  background: linear-gradient(to right, rgba(255, 66, 104, 1),rgba(65, 66, 114, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: repeat;
+  -moz-background-clip: text;
+  color: #03141c;
+}
+.gradient-color2{
+	background: linear-gradient(to right, rgba(65, 66, 114, 1),rgba(255, 66, 104, 1));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-repeat: repeat;
+	-moz-background-clip: text;
+	color: #03141c;
+	
+  }
+
+.gradient-text{
+	background: linear-gradient(to right, #C51C75,#C937FB,#0DECFF,#FFA88E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: repeat;
+  -moz-background-clip: text;
+  color: #03141c;
+}
+.gradient-icon{
+	position: absolute;
+	top: 12px;
+	transition: all .5s linear;
+	right: 15px;
+}
+
+.gradient-icon:hover {
+	right: 5px;
+	transition: all .5s linear;
+	
+}
+
+
+@media screen and (max-width:1067px) {
+	.color-tag{
+		top: 280px !important;
+	}
+}
+
+@media screen and (max-width:1123px) {
+	.color-tag{
+		bottom: -80px !important;
+		left: 280px !important;
+	}
+}
